@@ -1,0 +1,36 @@
+<html >
+<head>
+    <title>
+        Payconiq Stock Service API
+    </title>
+    <script src="/js/angular.js"></script>
+    <script src="/bower-component/ui-grid.js"></script>
+    <script src="/js/app.js"></script>
+    <link rel="stylesheet" href="/css/ui-grid.css" type="text/css">
+
+    <style type="text/css">
+        .myGrid {
+            width: 800px;
+            height: 400px;
+            align-content: center;
+        }
+    </style>
+</head>
+<body ng-app="stocksApi">
+<h3>Welcome to Payconiq</h3>
+<header align="center">Stock Details</header>
+<div>
+
+</div>
+<div ng-controller="stocksController" align="center">
+    <marquee >
+        <span ng-repeat="stock in stocks" style="background-color: antiquewhite">
+        {{stock.NAME}} : {{stock.CURRENTPRICE}} € -
+      </span>
+    </marquee>
+    <div ui-grid="gridOptions" ui-grid-selection ui-grid-exporter ui-grid-pagination
+         ui-grid-resize-columns ui-grid-move-columns ui-grid-pinning class="myGrid"></div>
+
+</div>
+</body>
+</html>
