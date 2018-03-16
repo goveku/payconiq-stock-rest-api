@@ -26,7 +26,7 @@ UI Page is available pointing to rest endpoint /payconiq/api/stocks/view. UI pag
     2. schema-h2.sql --  H2DB DDL script for creating STOCK table in JVM memory.
     3. data-h2.sql   --  Initial data set insert script.
     4. Use http://localhost:8086/swagger-ui link for testing Rest API operations.
-    4. http://localhost:8086//payconiq/api/stocks/view   --- endpoint to display all stocks available in JVM memory.
+    5. http://localhost:8086//payconiq/api/stocks/view   --- endpoint to display all stocks available in JVM memory.
 
 ** Software Used:**
    1. Java 8
