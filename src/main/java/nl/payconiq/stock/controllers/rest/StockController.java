@@ -54,9 +54,9 @@ public class StockController {
     @ApiOperation(value = "Find stock by ID ", response = Iterable.class)
     @RequestMapping(value = "/stocks/{id}", method = RequestMethod.GET)
     public @ResponseBody
-    String  findById(@RequestParam(value = "id") int id) {
+    String findById(@RequestParam(value = "id") int id) {
         LOGGER.debug("Finding stock for : " + id);
-        Stock stock = null;
+        Stock stock;
         try {
             stock = stockService.findById(id);
 
@@ -65,7 +65,7 @@ public class StockController {
             return "Stock is not found with id " + id;
         }
 
-        return "Stock is found with id " + id + stock.toString();
+        return "Stock is found with id " + id + " " + stock.toString();
 
     }
 
@@ -80,9 +80,9 @@ public class StockController {
         if (response == 1) {
             LOGGER.debug(String.format("Updated stock for : %s - stock %s:", id, stock));
 
-            return "Stock is updated successfully ID:" + id + stock;
+            return "Stock is updated successfully ID:" + id + " " + stock;
         }
-        return "Stock is NOT updated successfully ID:" + id + stock;
+        return "Stock is NOT updated  ID:" + id;
 
     }
 
