@@ -55,15 +55,8 @@ public class Stock implements Serializable {
         }
 
         Stock stock = (Stock) obj;
-        if (!id.equals(stock.id)) {
-            return false;
-        }
+        return id.equals(stock.id) && name.equals(stock.name) && stock.currentPrice.equals(currentPrice);
 
-        if (!name.equals(stock.name)) {
-            return false;
-        }
-
-        return stock.currentPrice.equals(currentPrice);
     }
 
     @Override
