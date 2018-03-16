@@ -22,7 +22,7 @@ UI Page is available pointing to rest endpoint /payconiq/api/stocks/view. UI pag
 
 **Configuration details:**
 
-    1. application.yml file contains server port number and H2DB database datasouce details.
+    1. application.yml file contains server port number and H2 database datasouce details.
     2. schema-h2.sql --  H2DB DDL script for creating STOCK table in JVM memory.
     3. data-h2.sql   --  Initial data set insert script.
     4. Use http://localhost:8086/swagger-ui link for testing Rest API operations.
