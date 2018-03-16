@@ -1,6 +1,6 @@
 **Payconiq Stock Rest Service API**
 
-     Payconiq Stock API service to create/update/find/view stock details.
+     Payconiq Stock API service for create/update/find/view stock details.
 
 **Approached solution.**
 
